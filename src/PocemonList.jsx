@@ -1,37 +1,3 @@
-// import { useEffect, useState } from 'react';
-// import './PocemonList.css';
-
-// function PocemonList() {
-//     const [pokemonData, setPokemonData] = useState([]);
-
-//     useEffect(() => {
-//         fetch('https://pokeapi.co/api/v2/pokemon/?limit=1302')
-//             .then(response => response.json())
-//             .then(data => {
-//                 setPokemonData(data.results)
-//             })
-//             .catch(error => console.error('Произошла ошибка при выполнении запроса:', error));
-//     }, []);
-
-//     return (
-//         <>
-//             <h1>My Pocemons</h1>
-//             <div className='container'>
-//                 {pokemonData.map(pokemon => (
-//                     <div className='block' key={pokemon.name}>
-//                         <img src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${pokemon.url.split('/')[6]}.png`} alt={pokemon.name} />
-//                         <h3>{pokemon.name}</h3>
-//                     </div>
-//                 ))}
-//             </div>
-//         </>
-//     );
-// }
-
-// export default PocemonList;
-
-
-
 import React, { useEffect, useState } from 'react';
 import './PocemonList.css';
 
